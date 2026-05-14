@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --skedify-navy: #08213b;
+  --skedify-green: #00c16a;
+  --skedify-lime: #7fe600;
+  --skedify-mint: #eafff4;
+  --skedify-blue-soft: #eef7ff;
+  --skedify-border: #d8f5e4;
+}
+
+body {
+  background: linear-gradient(135deg, var(--skedify-mint), #ffffff, var(--skedify-blue-soft));
+  color: var(--skedify-navy);
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+.rbc-calendar {
+  color: var(--skedify-navy);
+}
+
+.rbc-toolbar {
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.rbc-toolbar button {
+  border-radius: 0.75rem;
+  border: 1px solid #d8f5e4;
+  color: var(--skedify-navy);
+  background: white;
+}
+
+.rbc-toolbar button.rbc-active {
+  background: var(--skedify-green);
+  color: white;
+  border-color: var(--skedify-green);
+}
+
+.rbc-event {
+  background: var(--skedify-green);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.rbc-today {
+  background: var(--skedify-mint);
+}
